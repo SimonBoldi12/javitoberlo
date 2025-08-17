@@ -86,7 +86,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -392,4 +392,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+}
+
+.logo-icon {
+    height: 60px;   /* állítsd, hogy akkora legyen mint a fa-ikon volt */
+    width: auto;    /* arányt megtartja */
 }
