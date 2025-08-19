@@ -77,12 +77,106 @@
 nav {
     background-color: rgb(69, 78, 69);
 }
+.zold{
+    background-color: rgb(69, 78, 69);
+}
 .cim{
     color: cyan;
 }
 .ikonok{
     color: rgb(69, 78, 69);;
 }
+.footer__kep{
+    width: 100%;
+}
+/* COOKIES  */
+
+
+.popup {
+  display: none; /* Alapértelmezetten rejtve */
+  position: fixed;
+  bottom: -150px;
+  left: 190px;
+  background-color: #fff;
+  border: 5px solid rgb(69, 78, 69);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  opacity: 0;
+  animation: megjelenik 0.5s ease-out forwards; /* Animáció a megjelenéshez */
+  z-index: 1001;
+}
+
+@keyframes megjelenik {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.hidden {
+  animation: eltunik 0.5s ease-out forwards; /* Az áttűnés időtartama és típusa */
+}
+
+@keyframes eltunik {
+  0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.cookie-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  display: block; /* Blokk szintű elemként viselkedik */
+  margin-left: auto;  /* Középre igazítás */
+  margin-right: auto; /* Középre igazítás */
+}
+
+
+.suti_btn {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(69, 78, 69);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suti_btn:hover {
+  background-color: rgb(69, 78, 69);
+}
+
+.suti_btn:focus {
+  outline: none;
+}
+
+@media (max-width: 1020px) {
+  .popup {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
 
 .navbar .dropdown-toggle::after {
     border: none;
@@ -219,7 +313,7 @@ nav {
 }
 
 .service .nav .nav-link.active {
-    background: var(--primary);
+    background-color: rgb(69, 78, 69);
 }
 
 .service .nav .nav-link.active h4 {
