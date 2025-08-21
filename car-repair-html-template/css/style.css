@@ -364,7 +364,7 @@ nav {
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/foglalas.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -551,7 +551,105 @@ nav {
     margin-bottom: 20px;
 }
 
+@media (max-width: 1020px) {
+  .fel_szoveg{
+    font-size: medium;
+    width: auto;
+  }
+  .fel_szoveg2{
+    font-size: medium;
+    width: auto;
+  }
+}
+
+
+
 .logo-icon {
     height: 60px;   /* állítsd, hogy akkora legyen mint a fa-ikon volt */
     width: auto;    /* arányt megtartja */
+}
+
+.img-gallery{
+  width: 100%;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 30px;
+
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.9) rotate(-5deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img{
+  width: 90%;
+  max-width: 600px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.full-img .nav.left {
+  left: 20px; /* vagy 10px, ahogy tetszik */
+  right: auto;
+  padding: 10px;
+}
+
+.full-img .nav.right {
+  right: 20px;
+  left: auto;
+  padding: 10px;
+}
+
+.full-img .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.zoomable {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.zoomable.zoomed {
+  transform: scale(2);
+  transform-origin: center center !important;
+  cursor: zoom-out;
+  pointer-events: auto;
+}
+.muhely{
+    margin-top: 50px;
+    text-align: center;
 }
