@@ -3,10 +3,25 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CarServ - Car Repair HTML Template</title>
+    <title>Tákolda - Kapcsolat</title>
+    <meta name="description" content="Szereld magadnak saját autódat professzionális körülmények között nálunk, a Tákolda Szereld Magad műhelyben!">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+
+    <meta property="og:title" content="Tákolda Szereld Magad">
+    <meta property="og:description" content="Szereld magad műhely Nyíregyházán">
+    <meta property="og:image" content="https://www.takolda.hu/img/takolda_logo.png">
+    <meta property="og:url" content="https://www.takolda.hu/">
+    <meta property="og:type" content="website">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDP8W7JFK2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NDP8W7JFK2');
+    </script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -30,6 +45,25 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+        <!-- JSON-LD strukturált adat -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Tákolda Szereld Magad",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bokréta utca 18.",
+        "addressLocality": "Nyíregyháza",
+        "postalCode": "4400",
+        "addressCountry": "HU"
+    },
+    "telephone": "+36 70 395 9074",
+    "openingHours": "Mo-Su 10:00-20:00",
+    "url": "https://www.takolda.hu"
+    }
+    </script>
 </head>
 
 <body>
